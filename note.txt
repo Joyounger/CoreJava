@@ -1,0 +1,27 @@
+
+ch3 java基本的程序设计结构
+任何一个Java对象都可以转换成字符串
+
+
+3.6.8
+构建字符串：
+如果需要使用许多小段的字符串构建一个字符串，应该按照下列步骤进行：
+构建一个空的字符串构建器
+StringBuilder builder = new StringBuilder();
+当每次需要添加一部分内容时，就调用append方法：
+builder.append(ch);  // appends a single character
+builder.append(str); // appends a string
+在需要构建字符串时就调用toString方法，将可以得到一个String对象，其中包含了构建器中的字符序列。
+String completeString = builder.toString();
+
+在JDK5.0中引入了StringBuilder类，这个类的前身是StringBuffer,其效率略微有些低，但允许采用多线程的方式执行添加或删除字符串的操作。
+如果所有字符串在一个单线程中编辑，则应该用StringBuilder替代它。这两个类的api是相同的。
+
+
+
+3.7.1 读取输入
+要通过控制台进行输入，首先需要构造一个Scanner对象，并与“标准输入流”System.in关联。
+Scanner in = new Scanner(Systeem.in);
+
+
+
