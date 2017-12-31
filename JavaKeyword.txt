@@ -1,0 +1,20 @@
+
+
+Java语言有51个关键字。
+数据类型：
+Boolean    int    long    short    byte    float    double    char    class    interface
+流程控制：
+if     else    do    while    for    switch    case    default    break    continue    return    try    catch    finally
+修饰符：      
+public    protected    private    final    void     static    strictfp     abstract     transient
+synchronized     volatile    native
+动作：          
+package    import     throw    throws     extends    implements    this    Super    instanceof    new
+
+
+保留字：      
+true     false    null    goto    const
+
+注:
+1 java的关键字都是小写的
+2 保留关键字 goto   const
